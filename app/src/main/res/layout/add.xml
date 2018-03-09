@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include layout="@layout/add_titlebar" />
+    <!-- 标题 -->
+    <EditText
+        android:id="@+id/noteName"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:hint="请输入标题"
+        android:textSize="25sp"
+        android:textColor="@color/colorTitle" />
+    <!-- 闹钟时间 -->
+    <EditText
+        android:id="@+id/noteTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/noteName"
+        android:editable="false"
+        android:textColor="@color/colorRed" />
+    <!-- 备忘录内容 -->
+    <view
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/noteMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/noteTime"
+        class="com.example.user.lovewall.LinedEditText"
+        android:background="@drawable/background"
+        android:capitalize="sentences"
+        android:fadingEdge="vertical"
+        android:gravity="top"
+        android:padding="5dip"
+        android:scrollbars="vertical"
+        android:hint="请输入内容"
+        android:textColor="@color/colorText" />
+</LinearLayout>

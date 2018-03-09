@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="bottom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include layout="@layout/chat_titlebar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/msg_resycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginTop="10dp">
+        <!--   将最新的条目自动更新到可视范围内  -->
+    </android.support.v7.widget.RecyclerView>
+
+    <com.nightonke.boommenu.BoomMenuButton
+        android:id="@+id/bmb"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bmb_buttonEnum="textOutsideCircle"
+        app:bmb_piecePlaceEnum="piecePlace_dot_2_1"
+        app:bmb_buttonPlaceEnum="buttonPlace_sc_2_1"
+        app:bmb_boomInWholeScreen="false"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/content"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="请输入您要发送的内容:"/>
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:text="发 送"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:background="@drawable/shape_btn" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="80px"
+    >
+    <!-- ListView元素 -->
+    <TextView
+        android:id="@+id/noteName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|left"
+        android:textSize="40px"
+        android:layout_marginLeft="10px"
+        android:textColor="@color/colorBlack"
+        />
+    <TextView
+        android:id="@+id/noteTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20px"
+        android:textSize="25px"
+        android:textColor="@color/colorText"
+        />
+</LinearLayout>
